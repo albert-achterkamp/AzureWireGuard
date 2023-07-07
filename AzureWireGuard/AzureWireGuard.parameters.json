@@ -9,10 +9,10 @@
       "value": "vmadmin"
     },
     "adminPassword": {
-      "value": "A_Really_Str0ng_P@ssw0rd"
+      "value": "tl-SG108S#ssw0rd"
     },
     "location": {
-      "value": "eastus2"
+      "value": "germanywestcentral"
     },
     "vmSize": {
       "value": "Standard_DS2_v2"

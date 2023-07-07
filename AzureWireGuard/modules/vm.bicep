@@ -3,7 +3,6 @@ param location string
 param tags object
 param vmSize string
 param adminUsername string
-@secure()
 param adminPassword string
 
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2022-09-01' existing = {
