@@ -4,9 +4,9 @@ param code string = substring(uniqueString(subscription().id, location), 0, 5)
 param tags object = {}
 param vmSize string = 'Standard_DS2_v2'
 @maxLength(16)
-param adminUsername string = 'vmadmin'
+param adminUsername string
 @minLength(12)
-param adminPassword string = 'tl-SG108S#ssw0rd'
+param adminPassword string
 
 targetScope = 'subscription'
 
@@ -16,7 +16,8 @@ var xtags = union(tags, {
 
 // 1. Create Resource Group
 module rg 'modules/rg.bicep' = {
-  name: 'rg-wg-${code}'
+//  name: 'rg-wg-${code}'
+  name: 'rg-wg-20230712A'
   params: {
     code: code
     location: location
